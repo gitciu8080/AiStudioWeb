@@ -50,7 +50,7 @@ export default function Home() {
     <section className="section about" id="about">
       <div className="section-kicker"><span>01</span> WHO WE ARE</div>
       <div className="about-grid"><div><h2>不只学习技术，<br/>更要把技术<span>带上赛场。</span></h2></div><div className="about-copy">
-        <p className="lead">人工智能工作室，是广东交通职业技术学院信息学院面向 AI 实践与学科竞赛的学生成长平台。</p>
+        <p className="lead">人工智能工作室，是广东交通职业技术学院信智学院面向 AI 实践与学科竞赛的学生成长平台。</p>
         <p>我们坚持“以赛促学、以赛促教”。从 Python、计算机视觉、大数据到智能体应用，在一次次训练、组队和复盘中，把零散知识连接成解决问题的能力。</p>
         <div className="principles"><div><Bot size={24}/><strong>前沿方向</strong><small>紧跟 AI 技术与产业应用</small></div><div><Swords size={24}/><strong>竞赛实战</strong><small>以真实赛题锤炼硬实力</small></div><div><Sparkles size={24}/><strong>共同成长</strong><small>有分享，也有并肩作战</small></div></div>
       </div></div>
@@ -65,7 +65,7 @@ export default function Home() {
     </section>
 
     <section className="section tracks" id="tracks">
-      <div className="section-heading dark-text"><div><div className="section-kicker"><span>03</span> OUR ARENAS</div><h2>从校内练兵，<br/>到更大的赛场。</h2></div><p>工作室承办面向信息学院学生的技能竞赛，让更多同学拥有一次低门槛、高反馈的实战起点。</p></div>
+      <div className="section-heading dark-text"><div><div className="section-kicker"><span>03</span> OUR ARENAS</div><h2>从校内练兵，<br/>到更大的赛场。</h2></div><p>工作室承办面向信智学院学生的技能竞赛，让更多同学拥有一次低门槛、高反馈的实战起点。</p></div>
       <div className="track-grid">{tracks.map(({icon:Icon,...track})=><a href={track.link} target="_blank" rel="noreferrer" className="track-card reveal" key={track.name}>
         <div className="track-top"><span>{track.no}</span><ArrowUpRight size={20}/></div><Icon size={42} strokeWidth={1.35}/><h3>{track.name}</h3><p>{track.copy}</p><span className="text-link">查看竞赛推文 <ChevronRight size={16}/></span>
       </a>)}</div>
@@ -76,8 +76,8 @@ export default function Home() {
       <div className="steps">{process.map(([no,title,copy])=><div className="step reveal" key={no}><span>{no}</span><div><h3>{title}</h3><p>{copy}</p></div></div>)}</div>
     </div></section>
 
-    <section className="join" id="join"><div className="join-icon"><Zap size={34} strokeWidth={1.5}/></div><p>NEW MEMBERS WANTED</p><h2>下一次站上领奖台的人，<br/>为什么不能是你？</h2><p className="join-copy">欢迎对人工智能、编程与技术竞赛有兴趣的同学。关注信息学院通知，或前往工作室咨询招新安排。</p><div className="qr-placeholder" role="img" aria-label="招新二维码放置位"><div className="qr-frame"><img src="/recruitment-qr.png" alt="人工智能工作室招新群"/></div><strong>扫描进群</strong></div><a className="button primary light-button" href="#top">现在，向前一步 <ArrowUpRight size={19}/></a><br/><span> </span><br/><a className="button primary light-button" href="https://weixin.qq.com/g/AwYAAM12pnQqwVqeedIkWqguoAiBZKCFvZbmNqRaRl01czNfLlQm8bl8v03MD-sQ">点击链接进群 <ArrowUpRight size={19}/></a><div className="join-tags"><span># 不限基础</span><span># 重视行动</span><span># 长期主义</span></div></section>
+    <section className="join" id="join"><div className="join-icon"><Zap size={34} strokeWidth={1.5}/></div><p>NEW MEMBERS WANTED</p><h2>下一次站上领奖台的人，<br/>为什么不能是你？</h2><p className="join-copy">欢迎对人工智能、编程与技术竞赛有兴趣的同学。关注信智学院通知，或前往工作室咨询招新安排。</p><div className="qr-placeholder" role="img" aria-label="招新二维码放置位"><div className="qr-frame"><img src="/recruitment-qr.png" alt="人工智能工作室招新群"/></div><strong>扫描进群</strong></div><a className="button primary light-button" href="#top">现在，向前一步 <ArrowUpRight size={19}/></a><br/><span> </span><br/><a className="button primary light-button" href="https://weixin.qq.com/g/AwYAAM12pnQqwVqeedIkWqguoAiBZKCFvZbmNqRaRl01czNfLlQm8bl8v03MD-sQ">点击链接进群 <ArrowUpRight size={19}/></a><div className="join-tags"><span># 不限基础</span><span># 重视行动</span><span># 长期主义</span></div></section>
 
-    <footer><div className="brand footer-brand"><span className="brand-mark"><BrainCircuit size={23}/></span><span><strong>AI STUDIO</strong><small>广东交通职业技术学院 · 信息学院</small></span></div><p>以赛促学 · 以创促用 · 以技术抵达更远的地方</p><a href="#top">BACK TO TOP <ArrowUpRight size={14}/></a></footer>
+    <footer><div className="brand footer-brand"><span className="brand-mark"><BrainCircuit size={23}/></span><span><strong>AI STUDIO</strong><small>广东交通职业技术学院 · 信智学院</small></span></div><p>以赛促学 · 以创促用 · 以技术抵达更远的地方</p><a href="#top">BACK TO TOP <ArrowUpRight size={14}/></a></footer>
   </main>;
 }
